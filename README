@@ -1,0 +1,2 @@
+Functions for converting between primitive strings (assuming utf-16) and
+utf-8 encoded Uint8Arrays.  Surrogate pairs are correctly handled and an effort has been made to ensure that invalid data is detected immediately.
