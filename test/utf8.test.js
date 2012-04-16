@@ -134,12 +134,12 @@
         raises(function () {
                 utf8.decode(new Uint8Array([0xed, 0xa0, 0x80]));
             }, Error,
-            "raises on encoded surrogate pairs");
+            "raises on lowest possible encoded surrogate pair");
 
         raises(function () {
                 utf8.decode(new Uint8Array([0xed, 0xbf, 0xbf]));
             }, Error,
-            "raises on encoded surrogate pairs");
+            "raises on highest possible encoded surrogate pair");
     });
 
 
