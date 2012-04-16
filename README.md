@@ -3,14 +3,14 @@ Surrogate pairs are correctly handled and an effort has been made to ensure that
 
 
 Installation
-~~~~~~~~~~~~
+============
 No dependencies though you may wish to include a workaround for browsers that do not support typed arrays.
 
 No compilation neccessary just copy utf8.js into your source tree and include it in the html file.
 
 
 Usage
-~~~~~
+=====
 To convert from a string literal or object to utf-8 simply call:
 
     utf8.encode(string);
@@ -28,7 +28,7 @@ By default it is set to `true` and the function will raise an `Error` on any ill
 
 
 Bugs
-~~~~
+====
 None that I am aware of at the moment having tested in Firefox 11 and Chromium 18 under Linux on amd64.
 Bug reports and/or pull requests welcome at https://github.com/bwhmather/js-utf8
 If you have any problems I will do my best to help.
