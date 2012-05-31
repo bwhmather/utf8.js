@@ -6,7 +6,8 @@ Installation
 ============
 No dependencies though you may wish to include a workaround for browsers that do not support typed arrays.
 
-No compilation neccessary just copy utf8.js into your source tree and include it in the html file.
+No compilation neccessary just copy utf8.js into your source tree.
+The file should work as a commonjs or AMD module as well as just inline.
 
 
 Usage
