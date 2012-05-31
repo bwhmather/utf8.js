@@ -21,9 +21,10 @@ In the event that the string is not valid utf-16, `utf8.encode` should throw an 
 
 The reverse operation is:
 
-    utf8.decode(utf8_uint8_array, strict)
+    utf8.decode(utf8_uint8_array, options)
 
-The optional `strict` argument is a flag which indicates whether or not `utf8.decode` should reject characters encoded with more bytes than neccessary and characters reserved for utf-16 surrogate pairs.
+The `options` argument is not required.
+At the moment the only field that is used from the options object is a `strict` flag which indicates whether or not `utf8.decode` should reject characters encoded with more bytes than neccessary and characters reserved for utf-16 surrogate pairs.
 By default it is set to `true` and the function will raise an `Error` on any illegal input.
 
 
